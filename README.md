@@ -14,6 +14,8 @@ BASICS
 DATABASE
 - <del>Insert URLs into DB</del>
 - <del>Show URLs on main page</del>
+- <del>Add URL Shortener algorithm</del>
+- Unset the input button.
 
 STYLE
 - <del>Deal with webpage style</del>
