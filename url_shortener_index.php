@@ -31,39 +31,12 @@
 				<h1>THE LINK KNOWS ALL. SO CAN YOU.<br>
 				<small>Measure your links with url shortener, the world's leading link management platform.</small>
 				</h1>
-				<form action="url_shortener_index.php" method="POST">
+				<form action="url_shortener_proccess.php" method="POST">
 					<div class="input-group" id="dv_form">
 					  <input type="text" class="form-control" placeholder="Paste your URL" name="txt_url" style="background-color: #5d5f60; color: #252626">
 					  <span class="input-group-btn"><button class="btn btn-secondary" type="input" name="btn_submit">Shorten!</button></span>
 					</div>
 				</form>
-				<?php
-					if(isset($_POST['btn_submit'])){
-						$url = $_POST['txt_url'];
-						$short = new shortURL;	
-						if(!empty($url)){
-							try{
-								$sql = $conn->prepare("INSERT INTO table_url_hash (url_name) VALUES (?)");
-							
-								//INSERT NEW ROW
-								$sql->execute(array($url));
-
-								//SELECT LAST ID
-								$id = $conn->lastInsertId();
-
-								//INSERT LAST ID
-								$sql = $conn->prepare("UPDATE table_url_hash SET url_hash = ? WHERE url_id = {$id}");
-								$sql->execute(array($short->encode($id)));
-							}
-
-							catch(PDOException $e){
-								echo "<br> NUMERO 2 <br>";
-								echo "Insert failed: " . $e->getMessage();
-							}
-						}
-						unset($_POST['btn_submit']); //not working!
-					}
-				?>
 			</div>
 			<div id="dv_body">
 				<div id="dv_content">
