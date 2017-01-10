@@ -31,7 +31,7 @@
 				<h1>THE LINK KNOWS ALL. SO CAN YOU.<br>
 				<small>Measure your links with url shortener, the world's leading link management platform.</small>
 				</h1>
-				<form action="url_shortener_proccess.php" method="POST">
+				<form action="url_shortener_proccess.php" method="POST">	<!--Sends us to post webpage-->
 					<div class="input-group" id="dv_form">
 					  <input type="text" class="form-control" placeholder="Paste your URL" name="txt_url" style="background-color: #5d5f60; color: #252626">
 					  <span class="input-group-btn"><button class="btn btn-secondary" type="input" name="btn_submit">Shorten!</button></span>

@@ -25,10 +25,7 @@
 				echo "Insert failed: " . $e->getMessage();
 			}
 		}
-	}
-
-	//PRG system implementation pendant
-	
-	header("url=url_shortener_index.php"); 
-	exit();
+		header("Location: url_shortener_index.php"); //redirects to the main webpage
+		exit();
+	}	
 ?>
