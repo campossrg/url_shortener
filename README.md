@@ -1,23 +1,12 @@
-URL SHORTENER
-===========
+# URL SHORTENER
 
 URL Shortener is a web for implementing a url shortening resource
 --------------------------------------------------------------------------------------
 
-The main objective of this project is getting used with the common syntax of PHP and algorithms. For this task, following 
-to this paragraph there is a list of tasks to improve the view of the web and his maintenance.
+The main objective of this project is to turn a long url string into a easy to manage short key via an algorithm.
 
-BASICS
-- <del>Build the skeleton of the project</del>
-- <del>Add content</del>
+Those long urls are stored on a database for being used for several purposes matching always with the same key.
 
-DATABASE
-- <del>Insert URLs into DB</del>
-- <del>Show URLs on main page</del>
-- <del>Add URL Shortener algorithm</del>
-- Unset the input button.
+## License
 
-STYLE
-- <del>Deal with webpage style</del>
-
-
+This project is licensed under the GNU License - see the [LICENSE.md](LICENSE.md) file for details
